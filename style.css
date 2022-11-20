@@ -83,6 +83,7 @@
 .resume-header{
   text-align: center;
   margin-bottom: 60px;
+  font-size: 36px;
 }
 
 .resume-main{
@@ -92,11 +93,16 @@
 .experience, .education {
   text-align: center;
 }
+.education p{
+  margin-right: 20px;
+}
+
 .experience-msg{
   grid-column: 2;
 }
 .experience-msg p{
   margin-bottom: 120px;
+  margin-right: 20px;
 }
 .certificate{
   grid-column: 2;
@@ -125,6 +131,18 @@
   grid-column: 2/3;
   
 }
+.first-msg p{
+  margin-right:40px;
+  margin-left: 40px;
+}
+.second-msg p{
+  margin-right:40px;
+  margin-left: 40px;
+}
+.third-msg p{
+  margin-right:40px;
+  margin-left: 40px;
+}
 .second-project{
   margin-bottom: 50px;
 }
@@ -150,7 +168,7 @@ input[type=text], select, textarea {
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-  background-color: #04AA6D;
+  background-color: #76b5c5;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -160,7 +178,7 @@ input[type=submit] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: hsl(187, 85%, 49%);
 }
 
 /* Add a background color and some padding around the form */
@@ -171,13 +189,18 @@ input[type=submit]:hover {
   
   
 }
+.contact-msg{
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-top: 200px
+}
 
  
   footer {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
   }
-  .contact-info{
+.contact-info{
     grid-column: 1;
     text-align: center;
   }
@@ -205,4 +228,10 @@ input[type=submit]:hover {
 
 @media screen and (max-width: 650px){
   main{display: block;}
+}
+
+@media screen and (max-width: 650px){
+  .contact-msg{
+    margin-top: 30px;
+  }
 }
