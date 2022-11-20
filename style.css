@@ -1,0 +1,208 @@
+/* Style the header with a grey background and some padding */
+.header {
+    overflow: hidden;
+    background-color:#e9e9e9;
+    padding: 20px 10px;
+    
+  }
+  
+  /* Style the header links */
+  .header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+  .header .logo{
+    margin-top: -10px;
+  }
+  
+  /* Change the background color on mouse-over */
+  .header a:hover {
+    background-color: #76b5c5;
+    color: #ffffff;
+  }
+  
+  /* Style the active/current link*/
+  .header a.active {
+    
+    color: white;
+  }
+  
+  /* Float the link section to the right */
+  .header-right {
+    float: right;
+  }
+  
+  .hero-msg{
+    text-align: center;
+    margin: 250px 30px 0px 30px;
+    
+    
+    
+  }
+.hero-msg h1{
+    font-weight: bolder;
+    font-size: 50px;
+    
+}
+.hero-msg h2{
+  margin-top: -15px;
+  
+}
+
+.hero-msg p{
+    margin: 0px 10px 0px 10px;
+}
+
+  body{
+    background-color: #e9e9e9;
+    margin: 0;
+    padding: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif
+
+  }
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 100px;
+    
+    
+  }
+  
+  main a{
+    text-decoration: none;
+    text-align: center;
+}
+.resume-header{
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.resume-main{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.experience, .education {
+  text-align: center;
+}
+.experience-msg{
+  grid-column: 2;
+}
+.experience-msg p{
+  margin-bottom: 120px;
+}
+.certificate{
+  grid-column: 2;
+  margin-bottom: 50px;
+}
+.skills{
+  grid-column: 1;
+  text-align: center;
+  margin-left: -65px;
+}
+.skills-msg{
+  grid-column: 2;
+}
+.project-title{
+  text-align: center;
+  margin-top: 50px;
+  font-size: 36px;
+}
+.first-project{
+  grid-column: 1;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  
+}
+.first-msg{
+  grid-column: 2/3;
+  
+}
+.second-project{
+  margin-bottom: 50px;
+}
+.third-project{
+  margin-bottom: 50px;
+}
+.first-project, .first-msg, .second-project, .second-msg,
+ .third-project,.third-msg, .fourth-project, .fourth-msg{
+  text-align: center;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  
+  
+}
+
+ 
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+  .contact-info{
+    grid-column: 1;
+    text-align: center;
+  }
+  .contact-info h4{
+    margin-left: -1px;
+  }
+  .copyright{
+    grid-column: 2/3;
+    grid-row: 2;
+    text-align: center;
+    font-size: 14px;
+  }
+  .social{
+    grid-column: 3/4;
+    text-align: center;
+  }
+ 
+  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+
+@media screen and (max-width: 650px) {
+    header, footer{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 650px){
+  main{display: block;}
+}
